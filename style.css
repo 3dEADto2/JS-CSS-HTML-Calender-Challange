@@ -1,0 +1,91 @@
+hmtl {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-container {
+    background-color: lightcoral;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: darkslategray;
+    color: white;
+    width: 525px;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: cyan;
+    border-radius: 10px 10px 0 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    color: darkslategray;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+.header h2 {
+    font-size: 2.2rem;
+}
+
+.week {
+    font-size: 1.2rem;
+    font-weight: 800;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.week div {
+    width: 75px;
+    text-align: center;
+}
+
+.days {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days div {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days div:hover:not(.empty, .today) {
+    border: 3px solid cyan;
+    cursor: pointer;
+}
+
+.days .today {
+    background-color: cyan;
+    color: darkslategray;
+}
+
+.days .today:hover {
+    border: 3px solid darkslategray;
+    cursor: pointer;
+}
+
+
